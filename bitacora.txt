@@ -1,0 +1,4 @@
+26/04/2016
+	Se inicia el proyecto, el algoritmo a programar es el "problema de la panaderia", que simula la situación de un grupo de personas en una panaderia.
+		Se investigó sobre el algoritmo de lamport, el cual 
+	resuelve este problema. El algoritmo tiene un sistema el cual varias personas pueden llegar a tomar el mismo número a la vez, por lo cual impone un sistema de desempate. Esto para nuestra solucion no es tan real, asi que omitiremos esa parte y haremos exclusion mutua en la toma de números.

@@ -1,0 +1,39 @@
+<Ventana>:
+  BoxLayout:
+    orientation: 'vertical'
+    size: root.size
+    FloatLayout:
+      top: 0
+      size_hint: 1, 0.8
+      id: vis
+      canvas:
+        Rectangle:
+          source: 'fondo.jpg'
+          size: self.size
+          pos: self.pos
+        Line:
+          rectangle: self.x,self.y, self.width, self.height
+    BoxLayout:
+      size_hint: 1, 0.2
+      orientation: 'horizontal'
+      padding: 20
+      spacing: 20
+      Button:
+        text: "Matar a todos"
+        on_press: app.matar_a_todos()
+      Button:
+        text: "Compilar"
+        on_press: app.compilar()
+      Button:
+        text: "Proga A"
+        on_press: app.ejecutar('./c/prog_a')
+      Button:
+        text: "Proga B"
+        on_press: app.ejecutar('./c/prog_b')
+      Button:
+        text: "Lanzar Simulación"
+        on_press: app.ejecutar('./lanzador.sh')
+
+<Proceso@Image>
+  source: 'pelota.png'
+  size_hint: 0.1, 0.1
