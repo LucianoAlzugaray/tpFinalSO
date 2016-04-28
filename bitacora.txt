@@ -1,5 +1,6 @@
 Autores: Luciano Alzugaray y Emiliano De Marco
 
+----------------------------------------------------------------
 27/04/2016 
 	Formamos el grupo y seleccionamos como problema "Mandriles Africanos". La consigna es la siguiente:
 
@@ -7,3 +8,5 @@ Autores: Luciano Alzugaray y Emiliano De Marco
 
 Planeamos la concurrencia en C y como va a ser implementada. Armamos un repositorio para los cambios.
 
+Planificamos un bloqueo con semaforos.
+-------------------------------------------------------------------
