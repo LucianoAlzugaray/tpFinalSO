@@ -2,6 +2,7 @@ Autores: Luciano Alzugaray y Emiliano De Marco
 
 ----------------------------------------------------------------
 27/04/2016 
+19:30 
 	Formamos el grupo y seleccionamos como problema "Mandriles Africanos". La consigna es la siguiente:
 
 "Un estudiante de antropología con diplomado en ciencias de la computación se ha embarcado en un proyecto de investigación para determinar si es posible a babuinos africanos qué es un bloqueo mutuo. Localiza un cañón profundo y tiende una cuerda un lado a otro, de modo que los babuinos puedan cruzar el cañón colgándose de la cuerda y pasando un mano sobre la otra. Varios babuinos pueden cruzar al mismo tiempo, siempre que todos vayan en la misma dirección. Si en algún momento están en la cuerda al mismo tiempo babuinos que van hacia el este y otros que van hacia el oeste, ocurrirá un bloqueo (los babuinos quedarán atorados a la mitad) porque un babuino no puede pasar sobre otro mientras cuelgan por encima del cañón. Si un babuino desea cruzar el  cañón, debe verificar que ningún otro babuino esté cruzando actualmente en la dirección opuesta. Escriba un programa usando semáforos que eviten los bloqueos. No se preocupe porque una serie de babuinos dirigidos hacia el este detenga indefinidamente a los babuinos que viajan hacia el oeste.
@@ -9,4 +10,9 @@ Autores: Luciano Alzugaray y Emiliano De Marco
 Planeamos la concurrencia en C y como va a ser implementada. Armamos un repositorio para los cambios.
 
 Planificamos un bloqueo con semaforos.
--------------------------------------------------------------------
+-------------------------------------------------------------------------
+28/04/2016
+01:08
+	Funciona el codigo de la concurrencia pero con un pequeño fallo, seguramente que se queda autobloqueado cada proceso, pero cuando se manda señales de que cada proceso cierre anda relativamente bien. Se commiteara y se seguira mañana. Se agrego un pequeño .txt para explicar el uso del programa.
+
+-------------------------------------------------------------------------

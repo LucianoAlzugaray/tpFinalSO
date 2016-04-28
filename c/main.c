@@ -14,12 +14,12 @@ int main(int argc, char *argv[]){
 		int izquierda;
 		int derecha;
 		for (cant_monos = 0; cant_monos <= MAX_MONOS - 1 ; cant_monos++){
-			for (izquierda = 0; izquierda < atoi(argv[1]); izquierda++){
+			for (izquierda = 0; izquierda < atoi(argv[1]); izquierda++)
 				system("./mono izquierda");
-			}
-			for (derecha = 0; derecha < atoi(argv[2]); derecha++) {
-				system("./mono derecha")
-			}
+			
+			for (derecha = 0; derecha < atoi(argv[2]); derecha++) 
+				system("./mono derecha");
+			
 		}
 	}
 	return 0;

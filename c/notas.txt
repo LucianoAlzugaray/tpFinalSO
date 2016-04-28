@@ -1,0 +1,5 @@
+Modo de uso : ./ main <cantidad_monos_izquierda> <cantidad_monos_derecha>
+
+compilar usando:
+	gcc -pthread mono.c -o mono
+	gcc main.c -o main

@@ -21,6 +21,7 @@ typedef struct {
 } TMensaje;
 
 
+extern int numero_monos = 0;
 /**
  * Iniciar la comunicación con Processing.
  * Debe ser llamado antes de utilizar enviar.
