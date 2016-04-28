@@ -14,3 +14,4 @@ mono.o: mono.c
 
 clean:
 	rm mono main *.o
+	rm dev/shm/sem.derecha dev/shm/sem.izquierda
