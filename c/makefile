@@ -12,6 +12,9 @@ mono: mono.o
 mono.o: mono.c
 	gcc -c mono.c -o mono.o
 
+comm.linux.x86_64.o: comm.c
+	gcc main.c -o comm.linux.x86_64.o
+
 clean:
 	rm mono main *.o
 	rm dev/shm/sem.derecha dev/shm/sem.izquierda

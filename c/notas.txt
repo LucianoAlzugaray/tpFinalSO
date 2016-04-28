@@ -1,3 +1,0 @@
-Modo de uso : ./ main <cantidad_monos_izquierda> <cantidad_monos_derecha>
-
-Compilar haciendo uso del makefile
