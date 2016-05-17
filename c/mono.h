@@ -1,4 +1,6 @@
-#define MONO_IZQUIERDA "./mono izquierda"
-#define MONO_DERECHA "./mono derecha"
-
-int numero_monos;
+#define MONO_IZQUIERDA "./mono izquierda &"
+#define MONO_DERECHA "./mono derecha &"
+#define X_PUNTO_INICIAL_IZQUIERDA	40 
+#define Y_PUNTO_INICIAL_IZQUIERDA	40
+#define X_PUNTO_INICIAL_DERECHA	50
+#define Y_PUNTO_INICIAL_DERECHA	40
