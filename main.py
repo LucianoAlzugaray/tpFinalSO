@@ -19,6 +19,7 @@ TMensaje = buscar_estructura(
     './c/comm.h',
     'TMensaje'
 )
+
 from twisted.internet import protocol, reactor
 
 class EscuchaC(protocol.Protocol):
@@ -31,6 +32,7 @@ class EscuchaC(protocol.Protocol):
         self.app.llego_mensaje(m)
 
 print TMensaje
+
 class Ventana(Widget):
     pass
 
@@ -54,19 +56,9 @@ class VisualApp(App):
             self.procesos = {}
     def compilar(self):
         subprocess.call(
-            'gcc ./c/comm.c ./c/prog_a.c -o ./c/prog_a &&'
-            'gcc ./c/comm.c ./c/prog_b.c -o ./c/prog_b &&'
-            'echo "Compilacion OK"', shell=True)
-    def ejecutar(self, comando):
-        hilo = Thread(target=subprocess.call,
-        args=(comando,))
-        hilo.start()
-        #subprocess.call(comando)
-    def agregar_coso(self):
-        #import pdb; pdb.set_trace()
-        coso = Factory.Coso()
-        self.root.ids.vis.add_widget(coso,
-        )
+            'cd c && make clean', shell=True)
+        subprocess.call(
+            'cd c && make', shell=True)
 
     def llego_mensaje(self, m):
         '''
@@ -98,5 +90,6 @@ class VisualApp(App):
             proceso.x = m.x +  area_visualizacion.x
             proceso.y = m.y +  area_visualizacion.y
             proceso.source = m.imagen.strip('\x00')
+
 if __name__ == '__main__':
     VisualApp().run()

@@ -14,7 +14,6 @@ int main(int argc, char *argv[]){
 		int shm_fd = shm_open("/shm_monos", O_RDWR | O_CREAT, 0777);
 		ftruncate(shm_fd, sizeof(int));
 		data = mmap(NULL, sizeof(int), PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
-		*data = 0;
 		int izquierda;
 		int derecha;
 		for (izquierda = 0; izquierda < atoi(argv[1]); izquierda++)

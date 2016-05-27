@@ -17,4 +17,4 @@ comm.linux.x86_64.o: comm.c
 
 clean:
 	rm mono main *.o
-	rm dev/shm/sem.derecha dev/shm/sem.izquierda dev/shm/shm_monos
+	rm /dev/shm/sem.derecha /dev/shm/sem.izquierda /dev/shm/shm_monos /dev/shm/sem.sem_general

@@ -16,3 +16,7 @@ Planificamos un bloqueo con semaforos.
 	Funciona el codigo de la concurrencia pero con un pequeño fallo, seguramente que se queda autobloqueado cada proceso, pero cuando se manda señales de que cada proceso cierre anda relativamente bien. Se commiteara y se seguira mañana. Se agrego un pequeño .txt para explicar el uso del programa.
 
 -------------------------------------------------------------------------
+03/05/2016
+16:26
+	Se cambiara la el codigo para que la variable global sea una memoria compartida. Se agrego una condicion de semaforo que erroneamente se cambio en un commit.
+-------------------------------------------------------------------------
